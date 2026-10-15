@@ -3058,7 +3058,7 @@ body.modal-open {
 }
 
 .news-bg {
-  background-image: url("/img/mellowcafe-15.png");
+  background-image: url('../img/mellowcafe-15.png');
   width: 100%;
   height: 110vh;
   background-size: cover;
