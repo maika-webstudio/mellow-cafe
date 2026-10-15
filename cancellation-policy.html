@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mellow cafe</title>
+    <meta name="description" content="mellow cafeの公式サイトです。">
+    <meta name="robots" content="noindex">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/cancellation-policy.css">
+
+    <!-- JS -->
+    <script src="./js/jquery-4.0.0.js"></script>
+    <script src="./js/cancellation-policy.js" defer></script>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="./img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./img/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+    <link rel="manifest" href="./img/favicon/site.webmanifest" />
+</head>
+
+<body>
+    <header>
+        <a href="./index.html">
+            <img src="./img/mellow cafe-logo.png" alt="mellow cafe logo" class="header-logo">
+        </a>
+        <ul class="header-nav">
+            <li><a href="index.html#top">TOP</a></li>
+            <li><a href="index.html#about-content">ABOUT</a></li>
+            <li><a href="index.html#menu">MENU</a></li>
+            <li><a href="index.html#space">SPACE</a></li>
+            <li><a href="index.html#access">ACCESS</a></li>
+
+            <ul class="header-sns">
+                <li><a href="#"><img src="./img/x-icon.png" alt="X icon" class="sns-icon"></a></li>
+                <li><a href="#"><img src="./img/instagram-icon.png" alt="Instagram icon" class="sns-icon"></a></li>
+            </ul>
+        </ul>
+        
+        <div class="header-contact-pc">
+            <img src="./img/header-rectangle.png" alt="" class="contact-bg">
+            <div class="contact-content">
+                <p class="header-tel">tel : 012-34-5678</p>
+                <div class="contact-line"></div>
+                <a href="#" class="reserve-btn">予約フォームへ</a>
+            </div>
+        </div>
+
+        <!-- ハンバーガーメニュー -->
+        <div class="header-sp">
+            <button id="hamburger-btn" class="hamburger-overlay" aria-label="メニュー" aria-controls="overlay-menu" aria-expanded="false">
+                <span class="hamburger-overlay__line"></span>
+                <span class="hamburger-overlay__line"></span>
+                <span class="hamburger-overlay__line"></span>
+            </button>
+
+            <nav id="overlay-menu" class="nav-overlay" aria-hidden="true">
+                <div class="nav-overlay__content">
+                    <ul class="nav-overlay__list">
+                        <li class="nav-overlay__item"><a href="index.html#top" class="nav-overlay__link nav-link">TOP</a></li>
+                        <li class="nav-overlay__item"><a href="index.html#about-content" class="nav-overlay__link nav-link">ABOUT</a></li>
+                        <li class="nav-overlay__item"><a href="index.html#menu" class="nav-overlay__link nav-link">MENU</a></li>
+                        <li class="nav-overlay__item"><a href="index.html#space" class="nav-overlay__link nav-link">SPACE</a></li>
+                        <li class="nav-overlay__item"><a href="index.html#access" class="nav-overlay__link nav-link">ACCESS</a></li>
+                    </ul>
+                    <ul class="nav-overlay__sns">
+                        <li class="nav-overlay__sns-item"><a href="#"><img src="./img/x-icon.png" alt="X icon" class="nav-overlay__sns-icon"></a></li>
+                        <li class="nav-overlay__sns-item"><a href="#"><img src="./img/instagram-icon.png" alt="Instagram icon" class="nav-overlay__sns-icon"></a></li>
+                    </ul>
+                    <div class="header-contact-sp nav-overlay__contact">
+                        <img src="./img/header-rectangle.png" alt="" class="contact-bg">
+                        <div class="contact-content">
+                            <p class="header-tel">tel : 012-34-5678</p>
+                            <div class="contact-line"></div>
+                            <a href="#" class="reserve-btn">予約フォームへ</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="contner"></div>
+            <h3>キャンセルポリシー</h3>
+
+            <p>お客様各位</p>
+            <p>いつも当店をご利用いただき、誠にありがとうございます。<br>今後も気持ちよく飲食を楽しんでいただくために、ご予約の際はキャンセルポリシーを設けております。<br>ご協力をお願いいたします。</p>
+
+            <div class="aa">
+                <p>■ご予約のキャンセルについて</p>
+                <p>ご予約のキャンセル、日時の変更はお電話・メールにて承っております。</p>
+                <ul>
+                    <li><p>お電話：012-34-5678</p></li>
+                    <li><p>メール：mellowcafe@gmail.com</p></li>
+                </ul> 
+            </div>
+            
+            <div class="aa">
+                <p>■料理をご予約の場合</p>
+                <p>料理のご予約については、前日以降のキャンセルはキャンセル料が発生する場合があります。</p>
+                <ul>
+                    <li><p>前日キャンセルの場合：ご予約コース料金の20％ </p></li>
+                    <li><p>当日キャンセルの場合：ご予約コース料金の50％</p></li>
+                    <li><p>連絡のない無断キャンセルの場合：ご予約コース料金の100％</p></li>
+                </ul> 
+                <p>なお、2日前までのキャンセル・人数変更は無料にて承っておりますので、お気軽にご相談ください。</p>
+            </div>
+            
+            <div class="aa">
+                <p>■席のみ予約のキャンセルの場合</p>
+                <p>席のみ予約のキャンセルは、予約当日までにご連絡をお願いします。予約時間の15分を過ぎてもご来店されない場合は、キャンセルとさせていただきます。あらかじめご了承ください。</p>
+            </div>
+            
+             <div class="aa">
+                <p>■予約時間に遅れる場合</p> 
+                <p>やむを得ないご事情で予約時間に遅れる場合は、わかり次第ご連絡をお願いいたします。ご連絡をいただかずに予約時間の15分を過ぎてもご来店されない場合は、無断キャンセルとさせていただきます。コース料理をご予約の場合は、キャンセル料（予約コース料金の100％）をご請求させていただきます。</p>
+             </div>
+            
+            <div class="aa">
+                <p>■悪天候や自然災害時の対応について</p>
+                <p>急な悪天候や自然災害など、やむを得ない事情によるキャンセルにつきましては、キャンセル料はいただきません。その旨をご連絡いただきますようお願いいたします。</p>
+            </div>
+            
+            <p>お客様のご理解とご協力を賜り、より良いサービスを提供できるよう努めてまいります。</p>
+        </section>
+
+    </main>
+   
+    <footer>
+        <div class="footer-top">
+            <a href="./index.html"><img src="./img/mellow cafe-logo2.png" alt="mellow cafe logo" class="footer-logo"></a>
+            <div class="footer-line"></div>
+
+            <div class="footer-contact">
+                <h1>CONTACT</h1>
+                <p>※ご予約の際は、<a href="cancellation-policy.html" class="cansel">キャンセルポリシー</a>を必ずご確認くださいませ</p>
+                <p class="footer-tel">tel : 012-34-5678</p>
+                <a href="#" class="footer-reserve-btn">予約フォームへ</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-sns">
+                <img src="/img/x-icon2.png" alt="X icon" class="sns-icon">
+            <img src="/img/instagram-icon2.png" alt="instagram icon" class="sns-icon">
+            </div>
+            <p>©︎mellow cafe 2026</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mellow cafe</title>
+    <meta name="description" content="mellow cafeの公式サイトです。">
+    <meta name="robots" content="noindex">
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- JS -->
+    <script src="./js/jquery-4.0.0.js"></script>
+    <script src="./js/script.js" defer></script>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="./img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./img/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+    <link rel="manifest" href="./img/favicon/site.webmanifest" />
+</head>
+
+<body>
+    <!--LOADING SCREEN-->
+        <div id="loading-screen">
+            <div class="loading-inner">
+                <!-- コーヒー -->
+                <div class="coffee-loader">
+                    
+                    <!-- ドリッパー -->
+                    <div class="dripper">
+                        <div class="dripper-top"></div>
+                        <div class="dripper-body">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    
+                    <!-- コーヒーのしずく -->
+                    <div class="coffee-drop"></div>
+
+                    <!-- カップ -->
+                    <div class="coffee-cup">
+                        <div class="coffee-surface"></div>
+                        <div class="cup-handle"></div>
+                    </div>
+
+                    <!-- 湯気 -->
+                    <div class="steam steam-01"></div>
+                    <div class="steam steam-02"></div>
+                </div>
+
+                <!-- LOADING -->
+                <p class="loading-text">
+                    LOADING...
+                </p>
+
+                <!-- プログレスバー -->
+                <div class="loading-bar">
+                    <span></span>
+                </div>
+
+                <!-- パーセント -->
+                <p class="loading-percent">
+                    0%
+                </p>
+            </div>
+        </div>
+
+    <header>
+        <a href="./index.html">
+            <img src="./img/mellow cafe-logo.png" alt="mellow cafe logo" class="header-logo">
+        </a>
+        <ul class="header-nav">
+            <li><a href="#top">TOP</a></li>
+            <li><a href="#about-content">ABOUT</a></li>
+            <li><a href="#menu">MENU</a></li>
+            <li><a href="#space">SPACE</a></li>
+            <li><a href="#news">NEWS</a></li>
+            <li><a href="#access">ACCESS</a></li>
+
+            <ul class="header-sns">
+                <li><a href="#"><img src="./img/x-icon.png" alt="X icon" class="sns-icon"></a></li>
+                <li><a href="#"><img src="./img/instagram-icon.png" alt="Instagram icon" class="sns-icon"></a></li>
+            </ul>
+        </ul>
+        
+        <div class="header-contact-pc">
+            <img src="./img/header-rectangle.png" alt="" class="contact-bg">
+            <div class="contact-content">
+                <p class="header-tel">tel : 012-34-5678</p>
+                <div class="contact-line"></div>
+                <a href="#" class="reserve-btn">予約フォームへ</a>
+            </div>
+        </div>
+
+        <!-- ハンバーガーメニュー -->
+        <div class="header-sp">
+            <button id="hamburger-btn" class="hamburger-overlay" aria-label="メニュー" aria-controls="overlay-menu" aria-expanded="false">
+                <span class="hamburger-overlay__line"></span>
+                <span class="hamburger-overlay__line"></span>
+                <span class="hamburger-overlay__line"></span>
+            </button>
+
+            <nav id="overlay-menu" class="nav-overlay" aria-hidden="true">
+                <div class="nav-overlay__content">
+                    <ul class="nav-overlay__list">
+                        <li class="nav-overlay__item"><a href="#top" class="nav-overlay__link nav-link">TOP</a></li>
+                        <li class="nav-overlay__item"><a href="#about-content" class="nav-overlay__link nav-link">ABOUT</a></li>
+                        <li class="nav-overlay__item"><a href="#menu" class="nav-overlay__link nav-link">MENU</a></li>
+                        <li class="nav-overlay__item"><a href="#space" class="nav-overlay__link nav-link">SPACE</a></li>
+                        <li class="nav-overlay__item"><a href="#news" class="nav-overlay__link nav-link">NEWS</a></li>
+                        <li class="nav-overlay__item"><a href="#access" class="nav-overlay__link nav-link">ACCESS</a></li>
+                    </ul>
+                    <ul class="nav-overlay__sns">
+                        <li class="nav-overlay__sns-item"><a href="#"><img src="./img/x-icon.png" alt="X icon" class="nav-overlay__sns-icon"></a></li>
+                        <li class="nav-overlay__sns-item"><a href="#"><img src="./img/instagram-icon.png" alt="Instagram icon" class="nav-overlay__sns-icon"></a></li>
+                    </ul>
+                    <div class="header-contact-sp nav-overlay__contact">
+                        <img src="./img/header-rectangle.png" alt="" class="contact-bg">
+                        <div class="contact-content">
+                            <p class="header-tel">tel : 012-34-5678</p>
+                            <div class="contact-line"></div>
+                            <a href="#" class="reserve-btn">予約フォームへ</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+         <section id="top" class="first-view">
+            <h1>mellow cafe</h1>
+            <img src="/img/top.jpg" alt="top" class="img-fluid">
+
+            <div class="container_01">
+                <a href="#" class="scroll-down_01">
+                    <div class="circle-text_01"></div>
+                    <div class="arrow_01"></div>
+                </a>
+            </div>
+        </section>
+
+
+        <section class="about" id="about">
+            <div class="about-inner">
+
+                <!-- 写真1 -->
+                 <div class="about-photo about-photo01 scroll-photo">
+                    <img src="/img/mellow cafe-01.png" alt="">
+                 </div>
+
+                <!-- 右上の椅子 -->
+                <img class="chair chair-blue scroll-chair" src="/img/mellow cafe-06.png" alt="">
+                <img class="chair chair-orange scroll-chair" src="/img/mellow cafe-04.png" alt="">
+
+                <!-- 左側の椅子 -->
+                <img class="chair chair-gray scroll-chair" src="/img/mellow cafe-08.png" alt="">
+                <img class="chair chair-yellow scroll-chair" src="/img/mellow cafe-10.png" alt="">
+
+                <!-- 写真2 -->
+                <div class="about-photo about-photo02 scroll-photo">
+                    <img src="/img/mellow cafe-02.png" alt="">
+                </div>
+
+                <!-- テキスト -->
+                <div class="about-content" id="about-content">
+                    <h2 class="about-title scroll-title">
+                        色とりどりの椅子と木の温もり
+                    </h2>
+
+                    <div class="about-text">
+                        <p class="scroll-text">
+                            優しい光に包まれた店内で、<br>
+                            店主こだわりのコーヒーと自家製スイーツを。
+                        </p>
+
+                        <p class="scroll-text">
+                            木の温もりを感じるテーブルや、<br>
+                            どこか懐かしい色とりどりの椅子に囲まれて、<br>
+                            忙しい毎日を少しだけ忘れるような<br>
+                            穏やかな時間をお過ごしいただけます。
+                        </p>
+
+                        <p class="scroll-text">
+                            ひとりでのんびりしたい日も、<br>
+                            大切な人とおしゃべりを楽しみたい日も。
+                        </p>
+
+                        <p class="scroll-text">
+                            ふらっと立ち寄って、<br>
+                            お気に入りの一杯と一緒にゆっくり過ごせる、<br>
+                            そんな街のカフェです。
+                        </p>
+                    </div>
+                 </div>
+
+                <!-- 下の椅子 -->
+                <div class="bottom-chairs scroll-chair-group">
+                    <img src="/img/mellow cafe-07.png" alt="">
+                    <img src="/img/mellow cafe-05.png" alt="">
+                    <img src="/img/mellow cafe-09.png" alt="">
+                    <img src="/img/mellow cafe-11.png" alt="">
+                </div>
+            </div>
+        </section>
+
+       <section class="menu-section" id="menu">
+            <div class="menu-title">
+                <h1>MENU</h1>
+            </div>
+            
+            <div class="menu-grid">
+                <!-- COFFEE -->
+                <a  class="menu-card">
+                    <img src="./img/mellowlatte.jpg" alt="コーヒー">
+
+                    <div class="menu-overlay">
+                        <div class="menu-text">
+                            <h3>COFFEE</h3>
+                            <p>香り豊かなコーヒー</p>
+
+                            <botton class="menu-button menu-detail-btn" type="button" data-menu="coffee">
+                                View More
+                            </botton>
+                        </div>
+                    </div>
+                </a>
+                <!-- SWEETS -->
+                <a  class="menu-card">
+                    <img src="./img/cheesecake.jpg" alt="チーズケーキ">
+
+                    <div class="menu-overlay">
+                        <div class="menu-text">
+                            <h3>SWEETS</h3>
+                            <p>毎日お店で手作りしています</p>
+
+                            <botton class="menu-button menu-detail-btn" type="button" data-menu="sweet">
+                                View More
+                            </botton>
+                        </div>
+                    </div>
+                </a>
+                <!-- LUNCH -->
+                <a  class="menu-card">
+                    <img src="./img/lunch1.jpg" alt="ランチ">
+
+                    <div class="menu-overlay">
+                        <div class="menu-text">
+                            <h3>LUNCH</h3>
+                            <p>10:30~15:00</p>
+
+                            <botton class="menu-button menu-detail-btn" type="button" data-menu="lunch">
+                                View More
+                            </botton>
+                        </div>
+                    </div>
+                </a>
+                <!-- SEASONAL -->
+                <a  class="menu-card">
+                    <img src="./img/caramelapple.jpg" alt="タルト">
+
+                    <div class="menu-overlay">
+                        <div class="menu-text">
+                            <h3>SEASONAL</h3>
+                            <p>Autumn Limited</p>
+
+                            <botton class="menu-button menu-detail-btn" type="button" data-menu="seasonal">
+                                View More
+                            </botton>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+            <!-- View All Menu -->
+            <a href="./menu/menu.html" class="view-all-menu">
+                <span>View All Menu</span>
+                <span class="view-all-arrow">→</span>
+            </a>
+
+            <!-- 装飾チェア -->
+            <div class="menu-chair menu-chair-left">
+                <img src="/img/mellow cafe-06.png" alt="">
+                <img src="/img/mellow cafe-06.png" alt="">
+            </div>
+
+            <div class="menu-chair menu-chair-right">
+                <img src="/img/mellow cafe-07.png" alt="">
+                <img src="/img/mellow cafe-07.png" alt="">
+            </div>
+        </section>
+
+        <!-- MENU MODAL -->
+        <div class="menu-modal" id="menuModal" aria-hidden="true">
+            <div class="menu-modal-overlay"></div>
+
+            <div class="menu-modal-container" role="dialog" aria-modal="true" aria-labelledby="menuModalTitle">
+                <!-- CLOSE -->
+                <button class="menu-modal-close" id="menuModalClose" type="button" aria-label="閉じる" >
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <!-- メイン -->
+                <div class="menu-modal-main">
+
+                    <!-- PHOTO -->
+                    <div class="menu-modal-photo">
+                        <img
+                            id="menuModalImage"
+                            src=""
+                            alt=""
+                        >
+                    </div>
+
+                    <!-- CONTENT -->
+                    <div class="menu-modal-content">
+                        <h2 id="menuModalTitle"></h2>
+                        <div class="menu-modal-description" id="menuModalDescription"></div>
+                        <a href="./menu/menu.html" class="menu-modal-link" id="menuModalLink">menu →</a>
+                    </div>
+                </div>
+
+                <!-- GALLERY -->
+                <div class="menu-modal-gallery" id="menuModalGallery"></div>
+            </div>
+        </div>
+
+        <!-- SLIDER -->
+        <div class="slider-wrapper">
+            <ul class="slider">
+                <li class="slide"><img src="./img/shop1.jpg" alt="" /></li>
+                <li class="slide"><img src="./img/shop2.jpg" alt="" /></li>
+                <li class="slide"><img src="./img/shop3.jpg" alt="" /></li>
+                <li class="slide"><img src="./img/shop4.jpg" alt="" /></li>
+                <li class="slide"><img src="./img/shop5.jpg" alt="" /></li>
+                <li class="slide"><img src="./img/shop6.jpg" alt="" /></li>
+                <li class="slide"><img src="./img/shop7.jpg" alt="" /></li>
+                <li class="slide"><img src="./img/shop8.jpg" alt="" /></li>
+                <li class="slide"><img src="./img/shop9.jpg" alt="" /></li>
+                <li class="slide"><img src="./img/shop10.jpg" alt="" /></li>
+                <li class="slide"><img src="./img/shop11.jpg" alt="" /></li>
+                <li class="slide"><img src="./img/shop13.jpg" alt="" /></li>
+            </ul>
+        </div>
+
+        <section class="space" id="space">
+            <div class="space-title">
+                <h1>SPACE</h1>
+            </div>
+
+            <div class="space-content">
+                <h2>「ゆっくり過ごせる彩り空間」</h2>
+                <p>
+                    木の温もりを感じる店内には、<br>
+                    ひとりで過ごせるカウンター席と、<br>
+                    会話を楽しめるテーブル席をご用意しています。<br>
+                </p>
+            </div>
+
+            <div class="space-gallery">
+                <div class="space-gallery-item">
+                    <img src="./img/space-counter.png" alt="">
+                </div>
+                <div class="space-gallery-item">
+                    <img src="./img/space-table.png" alt="">
+                </div>
+                <div class="space-gallery-item">
+                    <img src="./img/space-terrace.png" alt="">
+                </div>
+            </div>
+        </section> 
+        
+        <section id="news" class="news">
+            <div class="news-bg">
+                <div class="news-contents">
+                    <h1>NEWS</h1>
+                    <ul class="news-list">
+                        <li class="news-item">
+                            <span class="news-date">2026.10.01</span>
+                            <div class="news-content">
+                                <span class="news-title">NEW OPEN</span>
+                                <p class="news-text">mellow cafeが新しくオープンしました。</p>
+                            </div>
+                        </li>
+                        <li class="news-item">
+                            <span class="news-date">2026.10.10</span>
+                            <div class="news-content">
+                                <span class="news-title">季節限定メニューのお知らせ</span>
+                                <p class="news-text">秋限定「キャラメルアップルタルト」が登場しました。</p>
+                            </div>
+                        </li>
+                        <li class="news-item">
+                            <span class="news-date">2026.10.20</span>
+                            <div class="news-content">
+                                <span class="news-title">臨時休業のお知らせ</span>
+                                <p class="news-text">11月3日は臨時休業とさせていただきます。</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="access" class="access">
+            <div class="access-contents">
+                <h1>ACCESS</h1>
+                <div class="access-content">
+                    <div class="access-map">
+                        <img src="./img/map.jpg" alt="access map">
+                    </div>
+                    <div class="access-info">
+                        <h3>mellow cafe</h3>
+                        <p>
+                            〒740-0000<br>
+                            山口県岩国市岩国町1-2-3
+                        </p>
+                        <p>
+                            tel : 012-34-5678<br>
+                            mail : mellowcafe@gmail.com
+                        </p>
+                        <p>
+                            open : 10:00〜18:00<br>
+                            closed : 火曜日・水曜日
+                        </p>
+                        <p>
+                            駐車場 : 5台
+                        </p>
+                    </div>
+                </div>
+
+                <div class="access-gallery">
+                    <img src="./img/mellow cafe-09.png" alt="">
+                    <img src="./img/mellow cafe-08.png" alt="">
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+   
+    <footer>
+        <div class="footer-top">
+            <a href="./index.html"><img src="./img/mellow cafe-logo2.png" alt="mellow cafe logo" class="footer-logo"></a>
+            <div class="footer-line"></div>
+
+            <div class="footer-contact">
+                <h1>CONTACT</h1>
+                <p>※ご予約の際は、<a href="cancellation-policy.html" class="cansel">キャンセルポリシー</a>を必ずご確認くださいませ</p>
+                <p class="footer-tel">tel : 012-34-5678</p>
+                <a href="#" class="footer-reserve-btn">予約フォームへ</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-sns">
+                <img src="/img/x-icon2.png" alt="X icon" class="sns-icon">
+            <img src="/img/instagram-icon2.png" alt="instagram icon" class="sns-icon">
+            </div>
+            <p>©︎mellow cafe 2026</p>
+        </div>
+    </footer>
+
+</body>
+</html>
